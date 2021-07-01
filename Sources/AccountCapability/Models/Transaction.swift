@@ -14,4 +14,8 @@ public struct Transaction: Decodable {
     public let amount: Double
     public let atmId: String?
     public var isPending: Bool = false
+    
+    enum CodingKeys:String,CodingKey {
+        case id,effectiveDate,description,amount,atmId
+    }
 }
