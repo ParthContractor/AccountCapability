@@ -10,5 +10,6 @@ import Foundation
 public struct AccountInfo: Decodable {
     public let account: Account
     public let transactions: [Transaction]?
+    public let pending: [Transaction]?
     public let atms: [ATM]?
 }
