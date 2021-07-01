@@ -13,4 +13,5 @@ public struct Transaction: Decodable {
     public let description: String?
     public let amount: Double
     public let atmId: String?
+    public var isPending: Bool = false
 }
