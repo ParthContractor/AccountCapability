@@ -5,6 +5,7 @@ final public class AccountCapability: LoadJSONFileData {
     var fileName: String = "data"//provide json filename
     typealias T = AccountInfo//provide custom model type to match with json template
 
+    public init(){}
     public func getCachedAccountInfo() -> AccountInfo? {
         return self.loadJsonFileData()
     }
